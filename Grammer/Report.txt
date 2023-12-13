@@ -1,0 +1,83 @@
+---------------------------
+Precision and Recall Scores
+---------------------------
+
+ - Precision: 0.2735229759299781
+ - Recall: 0.8992805755395683
+
+--------
+F1 Score
+--------
+
+- F1: 0.41946308724832204
+
+--------------
+Part 2 Answers
+--------------
+
+Reasons for false positives within our ouput (ground truth is 0 but prediction is 1)
+
+    - The CFG grammar used might be incomplete and does not cover all correct POS tag sequences found in real-world sentences.
+        Consequently, even valid sequences can be flagged as errors, leading to misclassifications.
+
+    - Ambiguities in POS tagging might lead to sequences that do not fit the grammar even if the original sentence was correct.
+        Different interpretations of word roles in a sentence can lead to unexpected tagging, clashing with the defined grammar.
+
+Reasons for false negatives within our ouput (ground truth is 1 but prediction is 0)
+
+    - The CFG grammar used might be too permissive in some cases, allowing for incorrect POS tag sequences.
+        Such leniency can result in incorrect sequences being accepted, missing genuine mistakes.
+
+    - Ambiguities in POS tagging might lead to sequences that fit the grammar even if the original sentence was incorrect.
+        The misinterpretation of tags can unintentionally conform to the grammar, falsely validating an incorrect sentence.
+
+-------------------
+Questions to Answer
+-------------------
+
+Q1. With our current design, is it possible to build a perfect grammar checker? 
+
+    - A perfect grammer checker cannot be generalized. But for the dataset given, we believe it would not be possible 
+        to create a perfect grammer checker, as false positives would be moutain too tall to overcome. The dynamic nature of language evolution and
+        regional variations makes it challenging to cover every linguistic nuance. This was especially evident when trying to make the "perfect" parser,
+        a grammar that is modified to parse one sentence can end up parsing other incorrect sequences as well.
+
+Q2. if not, briefly justify your answer?
+
+    - English as a language is too complicated. There could exists a set within our grammer that would generate both a 
+        grammatically correct and incorrect sentences. This is due to the complexity of both grammer and the ambiguity
+        inherent in the labeling of the orignal dataset. The inherent subjectivity in some grammatical rules and the vast
+        lexical choices in English further complicate the process.
+
+------------------------------------------
+Brief Justification of our grammar choices
+------------------------------------------
+
+- Justification of Grammar Choices:
+
+    S Productions: The start symbol  is modified to handle various English sentence structures. This includes simple ones
+    like "Noun Verb Noun", or complex ones like "Adjective Phrase Interjection"
+
+    NP (Noun Phrases): The choices made for NP cater to the different ways noun phrases can be constructed, such as determiner
+    followed by a noun, pronouns, nouns followed by prepositional phrases, etc. This diversity ensures nouns in different contexts are captured.
+
+    VP (Verb Phrases): VP has a broad set of derivations, from simple verb-noun constructs to more detailed ones that include
+    adjective phrases and other verb phrases. This reflects the multifaceted ways verbs can function in English.
+
+    PP (Prepositional Phrases): PPs are crucial in providing context in a sentence, and the variations chosen (from simple
+    preposition-noun to more compound structures) make sure the grammar can parse sentences with detailed contexts.
+
+    ADJP (Adjective Phrases) & ADVP (Adverb Phrases): Adjectives and adverbs provide descriptive information. The chosen
+    derivations allow for single word descriptions, as well as those that use prepositional phrases or even noun phrases to provide richer details.
+
+    Verb Choices: The inclusion of various verb forms ensures that the grammar can handle different tenses and moods.
+
+    Noun Choices: The grammar recognizes singular, plural, proper nouns, and even cardinal numbers as potential nouns, allowing for versatile noun usage.
+
+    Punctuation Handling: The inclusion of different punctuation marks (like periods, commas, etc.) ensures that sentences
+    of different lengths and structures can be parsed correctly.
+
+    Interjections: Recognizing interjections like 'UH' helps in parsing colloquial sentences or sentences that have interruptions.
+
+    Terminal Symbols: The terminal symbols chosen (like 'DT' for determiners, 'JJ' for adjectives, etc.) are aligned with
+    standard POS tagging conventions, ensuring that the grammar can work seamlessly with standard POS taggers.

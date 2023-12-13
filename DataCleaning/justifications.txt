@@ -1,0 +1,12 @@
+Cleaning:
+- Only included lines that began with a ‘*’. Removed the speaker name(CHI, MOT) and used regular expressions to start reading each line from after the first tab key till the end of the sentence, indicated by these punctuations: . ! ? . This was done so that only the relevant information was extracted from the datasets.
+- Used regular expressions to strip the data of everything except spaces, apostrophes, and alphabets(uppercase and lowercase). At the end of this step, we were left with sentences that had only these 3 components. Since punctuations and other extraneous characters were not applicable to our downstream task(or transformations), we removed them, leaving words with apostrophes to be dealt with.
+- Contractions(words with apostrophes) were first split at the apostrophe, and both parts were separately checked for in the CMU Dictionary. If both parts independently existed in the dictionary, we added the entire word to the ‘clean’ file and added the joint pronunciation of the word to the cmuDict file so that it would be easier to look for it during transformation.
+- In the cases where words existed in the dictionary but did not have a space in between them (eg. lotsof), we split the mega-word into different potential combinations of valid words until we found a match for both words, then added them to the ‘clean’ folder, each on a new line. We did this to include all the valid words that we possibly could.
+- We kept track of the words that did not fit in any of these categories and created a new file called ‘unfound.txt’ to write them in. We also kept track of how many database words we retained after the cleaning and how many were lost in order to gain an insight into our ‘success’ ratio. 
+- We have chosen to ignore any incorrectly spelled words, seeing as they are infrequent - amounting to less than 1% of our dataset.
+- Words that dont exist in the cmu_dictionary - like 'xxx' or baby noises - have been ignored.
+
+Trasformation:
+- Though the dictionary was in all uppercase alphabets, we opted to leave the cleaned data in the form it was because it would be easier to just temporarily convert to uppercase while searching for the word in the dictionary, plus it would give us added flexibility in the intended downstream task.
+We then transformed the data, and added a print statement for the ‘success’ ratio of our transformations.

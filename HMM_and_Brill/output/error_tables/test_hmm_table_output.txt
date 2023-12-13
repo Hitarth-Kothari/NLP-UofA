@@ -1,0 +1,211 @@
+Correct Tag: VB
+    - Incorrect Tag: 
+        - NN: 9
+        - JJ: 5
+        - NNP: 3
+        - FW: 1
+        - VBP: 3
+        - RB: 1
+        - VBN: 1
+
+Correct Tag: VBZ
+    - Incorrect Tag: 
+        - NN: 5
+        - IN: 1
+        - JJ: 1
+        - VBP: 1
+        - VB: 1
+
+Correct Tag: IN
+    - Incorrect Tag: 
+        - TO: 8
+        - RP: 4
+        - NNS: 1
+        - JJ: 1
+        - :: 1
+        - RB: 5
+        - VB: 3
+
+Correct Tag: JJ
+    - Incorrect Tag: 
+        - VB: 5
+        - NNP: 7
+        - NN: 26
+        - FW: 3
+        - RB: 1
+        - VBN: 3
+        - VBP: 1
+        - RP: 1
+        - CD: 1
+
+Correct Tag: FW
+    - Incorrect Tag: 
+        - JJ: 1
+        - NN: 2
+        - NNP: 2
+
+Correct Tag: VBG
+    - Incorrect Tag: 
+        - NN: 7
+        - NNS: 2
+        - JJ: 5
+        - VB: 6
+        - RB: 2
+        - VBN: 1
+
+Correct Tag: VBN
+    - Incorrect Tag: 
+        - NNP: 1
+        - JJ: 4
+        - RB: 1
+        - NN: 6
+        - VB: 2
+        - VBP: 1
+        - NNS: 1
+
+Correct Tag: NN
+    - Incorrect Tag: 
+        - VBP: 1
+        - JJ: 22
+        - NNP: 10
+        - VB: 4
+        - IN: 1
+        - NNS: 5
+        - VBZ: 2
+        - RB: 2
+        - FW: 1
+        - CD: 1
+
+Correct Tag: RB
+    - Incorrect Tag: 
+        - VB: 5
+        - DT: 1
+        - IN: 4
+        - NN: 10
+        - JJ: 8
+        - NNP: 3
+        - VBN: 1
+        - RP: 3
+        - MD: 1
+        - NNS: 1
+        - FW: 2
+
+Correct Tag: VBD
+    - Incorrect Tag: 
+        - VBP: 2
+        - VBN: 7
+        - NN: 6
+        - IN: 2
+        - VB: 4
+        - JJ: 3
+        - VBZ: 4
+
+Correct Tag: NNS
+    - Incorrect Tag: 
+        - NN: 58
+        - VB: 1
+        - NNP: 11
+        - FW: 1
+        - RB: 1
+        - JJ: 3
+        - VBZ: 1
+
+Correct Tag: VBP
+    - Incorrect Tag: 
+        - NN: 1
+        - NNP: 1
+        - VB: 3
+
+Correct Tag: ''
+    - Incorrect Tag: 
+        - ``: 1
+
+Correct Tag: CD
+    - Incorrect Tag: 
+        - LS: 1
+        - NN: 4
+        - NNP: 8
+        - FW: 3
+        - VBG: 1
+        - JJ: 4
+        - VB: 1
+
+Correct Tag: RBR
+    - Incorrect Tag: 
+        - JJR: 1
+
+Correct Tag: NNP
+    - Incorrect Tag: 
+        - VB: 7
+        - NN: 42
+        - JJ: 12
+        - FW: 3
+        - NNPS: 1
+        - RB: 3
+
+Correct Tag: NNPS
+    - Incorrect Tag: 
+        - NN: 6
+        - CD: 1
+        - NNP: 4
+
+Correct Tag: JJS
+    - Incorrect Tag: 
+        - JJ: 3
+        - RBS: 1
+
+Correct Tag: JJR
+    - Incorrect Tag: 
+        - RBR: 1
+        - NNP: 1
+
+Correct Tag: CC
+    - Incorrect Tag: 
+        - NNP: 2
+
+Correct Tag: DT
+    - Incorrect Tag: 
+        - IN: 1
+        - RB: 1
+        - CC: 1
+
+Correct Tag: UH
+    - Incorrect Tag: 
+        - NNP: 1
+
+Correct Tag: WDT
+    - Incorrect Tag: 
+        - IN: 3
+
+Correct Tag: WRB
+    - Incorrect Tag: 
+        - VB: 1
+
+Correct Tag: PRP
+    - Incorrect Tag: 
+        - RB: 1
+
+Correct Tag: :
+    - Incorrect Tag: 
+        - IN: 4
+
+Correct Tag: WP
+    - Incorrect Tag: 
+        - WDT: 2
+
+Correct Tag: ``
+    - Incorrect Tag: 
+        - '': 1
+
+Correct Tag: RBS
+    - Incorrect Tag: 
+        - JJS: 1
+
+Correct Tag: RP
+    - Incorrect Tag: 
+        - IN: 1
+
+Correct Tag: TO
+    - Incorrect Tag: 
+        - IN: 1
+

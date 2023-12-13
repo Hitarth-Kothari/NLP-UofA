@@ -1,0 +1,38 @@
+Most errors of BRILL (>10) in test.txt
+
+VB misclassified most with NN - 43
+JJ misclassified most with NN - 29
+TO misclassified most with IN - 14
+NN misclassified most with JJ - 12
+VBN misclassified most with VBD - 25
+RB misclassified most with NN - 13
+NNP misclassified most with NN - 77
+
+Most errors of BRILL (>10) in test_ood.txt
+
+VBD misclassified most with VBN - 24
+JJ misclassified most with NN - 33
+VBN misclassified most with VBD - 34
+NN misclassified most with JJ - 12
+DT misclassified most with IN - 13
+PRP misclassified most with NN - 15
+VB misclassified most with NN - 15
+NNP misclassified most with NN - 31
+UH misclassified most with NN - 12
+
+Most errors of HMM (>10) in test.txt
+
+JJ misclassified most with NN - 26
+NN misclassified most with JJ - 22
+NNS misclassified most with NN - 58
+NNP misclassified most with NN - 42
+
+Most errors of HMM (>10) in test_ood.txt
+
+VBD misclassified most with VBP - 45
+JJ misclassified most with NN - 26
+NN misclassified most with JJ - 21
+NNS misclassified most with NN - 53
+VBG misclassified most with NN - 11
+VBN misclassified most with NN - 12
+

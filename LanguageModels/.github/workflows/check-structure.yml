@@ -1,0 +1,31 @@
+name: pre-submission-checks
+on: [push]
+jobs:
+  test-runs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Go to repo directory
+        run: cd $GITHUB_WORKSPACE
+      - name: Check README
+        run: test -f README.md 
+      - name: Check data files
+        run: |
+          test -f data/training.txt
+          test -f data/dev.txt
+      - name: Install dependencies
+        run: |
+          if test -f "requirements.txt"; then
+              pip install --user -r requirements.txt
+          elif test -f "src/requirements.txt"; then
+              pip install --user -r src/requirements.txt 
+          else 
+              pip install nltk pandas regex
+          fi
+      - name: Run
+        run: |
+          python3 src/main.py unigram data/training.txt data/dev.txt
+          python3 src/main.py bigram data/training.txt data/dev.txt
+          python3 src/main.py bigram data/training.txt data/dev.txt --laplace
+          python3 src/main.py trigram data/training.txt data/dev.txt
+          python3 src/main.py trigram data/training.txt data/dev.txt --laplace

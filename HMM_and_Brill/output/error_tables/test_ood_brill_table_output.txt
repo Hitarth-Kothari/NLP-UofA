@@ -1,0 +1,168 @@
+Correct Tag: VBD
+    - Incorrect Tag: 
+        - VBN: 24
+        - NN: 19
+        - JJ: 1
+        - VB: 2
+        - VBP: 1
+
+Correct Tag: PRP$
+    - Incorrect Tag: 
+        - NN: 8
+        - PRP: 9
+
+Correct Tag: VBZ
+    - Incorrect Tag: 
+        - NNS: 5
+        - POS: 1
+
+Correct Tag: JJ
+    - Incorrect Tag: 
+        - CD: 1
+        - NNS: 4
+        - NN: 33
+        - RB: 4
+        - VBG: 3
+        - VBD: 7
+        - IN: 1
+
+Correct Tag: VBG
+    - Incorrect Tag: 
+        - NN: 1
+
+Correct Tag: VBN
+    - Incorrect Tag: 
+        - VBD: 34
+        - NN: 4
+        - VB: 1
+
+Correct Tag: VBP
+    - Incorrect Tag: 
+        - VB: 4
+        - NN: 3
+        - JJ: 2
+        - NNP: 1
+
+Correct Tag: NN
+    - Incorrect Tag: 
+        - JJ: 12
+        - NNS: 3
+        - VBG: 6
+        - VBP: 8
+        - VB: 7
+        - RB: 1
+        - DT: 1
+        - PDT: 1
+
+Correct Tag: DT
+    - Incorrect Tag: 
+        - IN: 13
+        - WDT: 2
+        - CC: 1
+        - RB: 2
+
+Correct Tag: PRP
+    - Incorrect Tag: 
+        - NN: 15
+        - PRP$: 1
+        - CD: 1
+
+Correct Tag: VB
+    - Incorrect Tag: 
+        - VBP: 8
+        - NN: 15
+        - VBN: 1
+        - DT: 1
+
+Correct Tag: NNP
+    - Incorrect Tag: 
+        - NN: 31
+        - NNS: 2
+        - VBD: 1
+
+Correct Tag: RB
+    - Incorrect Tag: 
+        - RP: 9
+        - JJ: 8
+        - NN: 6
+        - NNS: 2
+        - DT: 4
+        - EX: 1
+        - IN: 3
+
+Correct Tag: TO
+    - Incorrect Tag: 
+        - IN: 9
+
+Correct Tag: IN
+    - Incorrect Tag: 
+        - WDT: 5
+        - RB: 3
+        - RP: 6
+        - TO: 2
+        - NN: 2
+
+Correct Tag: RBR
+    - Incorrect Tag: 
+        - JJR: 2
+
+Correct Tag: NNPS
+    - Incorrect Tag: 
+        - NNS: 2
+
+Correct Tag: NNS
+    - Incorrect Tag: 
+        - NN: 1
+        - VBZ: 1
+        - JJ: 2
+
+Correct Tag: JJR
+    - Incorrect Tag: 
+        - RBR: 2
+        - NN: 1
+
+Correct Tag: PDT
+    - Incorrect Tag: 
+        - DT: 2
+        - NN: 1
+
+Correct Tag: CD
+    - Incorrect Tag: 
+        - PRP: 1
+        - NN: 3
+        - JJ: 1
+
+Correct Tag: CC
+    - Incorrect Tag: 
+        - DT: 1
+
+Correct Tag: MD
+    - Incorrect Tag: 
+        - VBD: 3
+
+Correct Tag: RP
+    - Incorrect Tag: 
+        - IN: 1
+        - RB: 1
+
+Correct Tag: JJS
+    - Incorrect Tag: 
+        - NN: 1
+
+Correct Tag: RBS
+    - Incorrect Tag: 
+        - JJS: 2
+
+Correct Tag: WDT
+    - Incorrect Tag: 
+        - IN: 1
+
+Correct Tag: UH
+    - Incorrect Tag: 
+        - NN: 12
+        - IN: 1
+
+Correct Tag: ''
+    - Incorrect Tag: 
+        - ``: 7
+

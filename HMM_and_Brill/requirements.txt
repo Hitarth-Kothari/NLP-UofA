@@ -1,0 +1,4 @@
+nltk
+pathlib
+scikit-learn
+regex
